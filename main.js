@@ -14,18 +14,23 @@ let $weekday2 = document.querySelector(".weekday2")
 let $temp2 = document.querySelector(".temp2");
 let $desc2 = document.querySelector(".desc2");
 
+let $weekday3 = document.querySelector(".weekday3")
 let $temp3 = document.querySelector(".temp3");
 let $desc3 = document.querySelector(".desc3");
 
+let $weekday4 = document.querySelector(".weekday4")
 let $temp4 = document.querySelector(".temp4");
 let $desc4 = document.querySelector(".desc4");
 
+let $weekday5 = document.querySelector(".weekday5")
 let $temp5 = document.querySelector(".temp5");
 let $desc5 = document.querySelector(".desc5");
 
+let $weekday6 = document.querySelector(".weekday6")
 let $temp6 = document.querySelector(".temp6");
 let $desc6 = document.querySelector(".desc6");
 
+let $weekday7 = document.querySelector(".weekday7")
 let $temp7 = document.querySelector(".temp7");
 let $desc7 = document.querySelector(".desc7");
 
@@ -74,26 +79,31 @@ console.log(weekDay);
                  $desc2.insertAdjacentHTML("beforebegin",`
                  <img src="http://openweathermap.org/img/wn/${data.daily[1].weather[0].icon}@2x.png">`)
  
+                 $weekday3.textContent = days[d.getDay()]
                  $temp3.innerHTML=data.daily[2].temp.day+" &degC"
                  $desc3.innerHTML=data.daily[2].weather[0].description
                  $desc3.insertAdjacentHTML("beforebegin",`
                  <img src="http://openweathermap.org/img/wn/${data.daily[2].weather[0].icon}@2x.png">`)
                  
+                 $weekday4.textContent = days[d.getDay()]
                  $temp4.innerHTML=data.daily[3].temp.day+" &degC"
                  $desc4.innerHTML=data.daily[3].weather[0].description
                  $desc4.insertAdjacentHTML("beforebegin",`
                  <img src="http://openweathermap.org/img/wn/${data.daily[3].weather[0].icon}@2x.png">`)
                  
+                 $weekday5.textContent = days[d.getDay()]
                  $temp5.innerHTML=data.daily[4].temp.day+" &degC"
                  $desc5.innerHTML=data.daily[4].weather[0].description
                  $desc5.insertAdjacentHTML("beforebegin",`
                  <img src="http://openweathermap.org/img/wn/${data.daily[4].weather[0].icon}@2x.png">`)
                  
+                 $weekday6.textContent = days[d.getDay()]
                  $temp6.innerHTML=data.daily[5].temp.day+" &degC"
                  $desc6.innerHTML=data.daily[5].weather[0].description
                  $desc6.insertAdjacentHTML("beforebegin",`
                  <img src="http://openweathermap.org/img/wn/${data.daily[5].weather[0].icon}@2x.png">`)
                  
+                 $weekday7.textContent = days[d.getDay()]
                  $temp7.innerHTML=data.daily[6].temp.day+" &degC"
                  $desc7.innerHTML=data.daily[6].weather[0].description
                  $desc7.insertAdjacentHTML("beforebegin",`

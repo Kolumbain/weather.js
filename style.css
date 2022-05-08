@@ -14,10 +14,59 @@
 
 }
 
+/* body {background-image: linear-gradient(to right , #cb2d3e , #ef473a);} */
 .form {
+     /* display: flex;
+    justify-content: center; */
+    padding-top: 50px;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    top: 0%;
+    left: 52%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    /* height: 40px; */
+    border-radius: 40px;
+    padding: 10px;
+}
+/* <img src="http://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png"> */
+
+.form:hover > input {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.form:hover > button {
+  background: white;
+  color : #2f3640;
+}
+
+button {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    align-items: center;
+    transition: 0.4s;
+}
+
+input {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
 }
 
 .city {
@@ -36,12 +85,91 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 90px;
 }
 
 .weather__item {
     display: flex;
     flex-direction: column;
     margin-left: 90px;
+}
+
+.weather1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: dodgerblue;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 150px;
+    height: 220px;
+
+}
+
+.weather2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5a87d8;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 150px;
+    height: 220px;
+}
+
+.weather3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: dodgerblue;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 150px;
+    height: 220px;
+}
+
+.weather4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5a87d8;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 150px;
+    height: 220px;
+}
+
+.weather5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: dodgerblue;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 150px;
+    height: 220px;
+}
+
+.weather6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5a87d8;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 150px;
+    height: 220px;
+}
+
+.weather7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: dodgerblue;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 150px;
+    height: 220px;
 }
 
 .weather1 img {
@@ -57,4 +185,31 @@
 
 .temp {
     font-size: 24px;
+}
+
+@media (max-width: 320px) {
+    .weather {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .weather__item {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .city {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .forecast {
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+    }
 }
